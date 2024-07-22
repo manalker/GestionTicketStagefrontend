@@ -1,20 +1,14 @@
 import { Component } from '@angular/core';
+import {RouterLink, RouterOutlet} from "@angular/router";
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  standalone: true,
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
+  imports: [
+    RouterOutlet,
+    RouterLink
+  ],
+  standalone: true
 })
-export class HeaderComponent {
-  login() {
-    // redirige vers la page de connexion
-    window.location.href = '/login';
-  }
-
-  register() {
-    // redirige vers la page d'inscription
-    window.location.href = '/register';
-  }
-}
-
+export class HeaderComponent { }
