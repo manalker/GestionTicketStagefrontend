@@ -3,15 +3,14 @@
     <div class="navbar-brand">MyHelpDesk</div>
     <div class="navbar-text">Bien Venu dans votre application de gestion des tickets</div>
   </div>
-
   <div class="navbar-bottom">
     <div class="navbar-menu">
-      <a href="#" class="nav-link"><i class="fas fa-cogs"></i> Fonctionnalités</a>
-      <a href="#" class="nav-link"><i class="fas fa-book"></i> Ressources</a>
-      <a href="#" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+      <a routerLink="/" class="nav-link"><i class="fas fa-cogs"></i> Fonctionnalités</a>
+      <a routerLink="/" class="nav-link"><i class="fas fa-book"></i> Ressources</a>
+      <a routerLink="/" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
     </div>
     <div class="navbar-buttons">
-      <button class="btn btn-login"><i class="fas fa-sign-in-alt"></i> Se connecter</button>
+      <button class="btn btn-login" [routerLink]="['/login']"><i class="fas fa-sign-in-alt"></i> Se connecter</button>
       <button class="btn btn-register"><i class="fas fa-user-plus"></i> S'inscrire</button>
     </div>
   </div>

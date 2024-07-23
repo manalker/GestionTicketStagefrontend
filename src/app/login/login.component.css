@@ -1,46 +1,109 @@
-/* login.component.css */
 .login-container {
-  max-width: 400px;
-  margin: 50px auto;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: flex-start; /* Aligne en haut verticalement */
+  height: 100vh;
+  padding-top: 20px; /* Ajustez cette valeur pour l'espacement en haut */
+}
+
+.contact-form {
+  width: 570px; /* Ajustez la largeur selon vos besoins */
   padding: 20px;
-  border: 1px solid #ced4da;
-  border-radius: 10px;
-  background-color: #f8f9fa;
+  background-color: #7e87d6; /* Couleur de fond similaire à l'image */
+  border-radius: 15px; /* Bordure arrondie */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateX(-150px); /* Déplace le formulaire vers la gauche */
 }
 
-.login-container h2 {
+.contact-form h2 {
   text-align: center;
-  color: #007bff;
+  color: #000000; /* Couleur du texte en noir */
+  margin-bottom: 20px;
 }
 
-.login-container .form-group {
-  margin-bottom: 15px;
+.form-group {
+  margin-bottom: 20px;
 }
 
-.login-container .form-group label {
+.form-group label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-.login-container .form-group input {
+.form-group input {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   border: 1px solid #ced4da;
   border-radius: 5px;
+  margin-top: 5px; /* Ajoute de l'espace en haut de l'input */
+  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
 }
 
-.login-container button {
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-container input {
+  flex: 1;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
+  background-color: #5a5a5a; /* Couleur de fond du bouton "Se connecter" */
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 20px;
 }
 
-.login-container button:hover {
-  background-color: #0056b3;
+button[type="submit"]:hover {
+  background-color: #4a4a4a; /* Couleur de fond au survol */
+}
+
+.login-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.secondary-button:hover {
+  text-decoration: underline;
+}
+
+.primary-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Couleur de fond du bouton "Créer un compte" */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.primary-button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
 }

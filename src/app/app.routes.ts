@@ -1,9 +1,8 @@
 import { Routes } from '@angular/router';
-import { ImageContainerComponent } from './image-container/image-container.component';
-import { ContactFormComponent } from './contact-form/contact-form.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
-  { path: '', component: ImageContainerComponent },
-  { path: 'contact', component: ContactFormComponent },
-  // Ajouter d'autres routes si nécessaire
+  { path: '', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
 ];
