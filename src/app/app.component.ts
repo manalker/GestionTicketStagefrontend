@@ -11,4 +11,7 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [HeaderComponent, ContactFormComponent, ImageContainerComponent, RouterModule]
 })
-export class AppComponent {}
+export class AppComponent {
+
+}
+

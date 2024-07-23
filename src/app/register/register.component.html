@@ -1,0 +1,51 @@
+<div class="content">
+  <div class="form-container">
+    <div class="contact-form">
+      <h2>Inscription</h2>
+      <form (ngSubmit)="onRegister()">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstname"><i class="fas fa-user"></i> Saisir votre prénom</label>
+            <input type="text" id="firstname" name="firstname" [(ngModel)]="firstname" required>
+          </div>
+          <div class="form-group">
+            <label for="lastname"><i class="fas fa-user"></i> Saisir votre nom</label>
+            <input type="text" id="lastname" name="lastname" [(ngModel)]="lastname" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone"><i class="fas fa-phone"></i> Entrez votre N° de téléphone</label>
+            <input type="tel" id="phone" name="phone" [(ngModel)]="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="dob"><i class="fas fa-calendar"></i> Entrez votre date de naissance</label>
+            <input type="date" id="dob" name="dob" [(ngModel)]="dob" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cin"><i class="fas fa-id-card"></i> Entrez votre N° de CIN</label>
+            <input type="text" id="cin" name="cin" [(ngModel)]="cin" required>
+          </div>
+          <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Saisir votre adresse email</label>
+            <input type="email" id="email" name="email" [(ngModel)]="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="password"><i class="fas fa-lock"></i> Saisir votre mdp</label>
+            <input type="password" id="password" name="password" [(ngModel)]="password" required>
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword"><i class="fas fa-lock"></i> Confirmer le mdp</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword" required>
+          </div>
+        </div>
+        <button type="submit" class="primary-button">Créer un compte</button>
+        <button type="button" class="secondary-button" [routerLink]="['/login']">Se connecter</button>
+      </form>
+    </div>
+  </div>
+</div>

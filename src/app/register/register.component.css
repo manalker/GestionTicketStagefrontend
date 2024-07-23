@@ -1,0 +1,100 @@
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  justify-content: center; /* Centre horizontalement */
+  align-items: flex-start; /* Aligne en haut verticalement */
+  height: 200vh;
+  padding-top: 20px; /* Ajustez cette valeur pour l'espacement en haut */
+}
+
+.content {
+  width: 700px; /* Ajustez la largeur selon vos besoins */
+  transform: translateX(-150px); /* Déplace le formulaire vers la gauche */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.text-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  background-color: #7e87d6;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* Grille des champs de formulaire */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 0 0 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Boutons */
+.primary-button, .secondary-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.primary-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.primary-button:hover {
+  background-color: #0056b3;
+}
+
+.secondary-button {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.secondary-button:hover {
+  background-color: #4a4a4a;
+}
